@@ -9,18 +9,24 @@ public class Main {
 
 		Scanner sc = new Scanner(System.in);
 		
-		double preco = 34.0;
-		double desconto =  (preco < 20.0) ? preco *0.1 : preco *0.05;
+		double price = 400.00;
 		
-		 /*
-		if (preco < 20.0) {
-			desconto = preco *0.1;
-			
-		}else {
-			desconto = preco * 0.05;
+		//  ela estânciada ela pertece ao escopo public static void Main
+		double discount = 0;
+		
+		if (price < 200.00) {
+			discount = price *0.1;
+			// Quando a estrutura termina a execução as váriavs que tiverem sido declaradas
+			// aqui dentro da estrutura vão ser desalocadas da mémeoria
 		}
-		*/
-		System.out.println(desconto);
+		/* outra forma de estância
+		else { 
+			discount =0;
+		}*/
+		
+		System.out.println(discount);
+		
+		
 				
 
 		
