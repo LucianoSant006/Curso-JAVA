@@ -3,7 +3,7 @@
 ## Apredendo sobre estrutura sequêncial
 
 <div align="center">
-<img https://github.com/LucianoSant006/Curso-JAVA/issues/3#issue-2470360691" width="0px" />
+<img ![Exercício estru sequencial 01](https://github.com/user-attachments/assets/aee90432-1a1a-4ee9-a5ba-c93b7c87c6e8) />
 </div>
 
 
