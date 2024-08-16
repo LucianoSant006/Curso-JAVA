@@ -8,17 +8,22 @@ public class Main {
 		Locale.setDefault(Locale.US);
 
 		Scanner sc = new Scanner(System.in);
+		
+		double preco = 34.0;
+		double desconto =  (preco < 20.0) ? preco *0.1 : preco *0.05;
+		
+		 /*
+		if (preco < 20.0) {
+			desconto = preco *0.1;
+			
+		}else {
+			desconto = preco * 0.05;
+		}
+		*/
+		System.out.println(desconto);
+				
 
-		String s1,s2,s3;
-
-		s1 = sc.nextLine();
-		s2 = sc.nextLine();
-		s3 = sc.nextLine();
-		System.out.println("DADOS DIGITADOS:");
-		System.out.println(s1);
-		System.out.println(s2);
-		System.out.println(s3);
-		sc.close();
+		
 	}
 
 }
