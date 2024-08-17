@@ -9,12 +9,12 @@ public class Main {
 
 		Scanner sc = new Scanner(System.in);
 
-		int i = sc.nextInt();
-
-		if (i < 0) {
-			System.out.println("Negativo");
+		int i = sc.nextInt(); 
+		
+		if (i %2 == 0) {
+			System.out.printf("O número %d é Par",i);
 		} else {
-			System.out.println("Não Negativo");
+			System.out.printf("O número %d é Impar",i);
 
 		}
 
