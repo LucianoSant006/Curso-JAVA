@@ -3,21 +3,24 @@ import java.util.Scanner;
 
 public class Main {
 
-	public static void main(String[] args) {
 
-		Locale.setDefault(Locale.US);
+		public static void main(String[] args) {
 
-		Scanner sc = new Scanner(System.in);
+			Scanner sc = new Scanner(System.in);
 
-		int i = sc.nextInt(); 
-		
-		if (i %2 == 0) {
-			System.out.printf("O número %d é Par",i);
-		} else {
-			System.out.printf("O número %d é Impar",i);
-
+			int A = sc.nextInt();
+			int B = sc.nextInt();
+			
+			int C = A + B;
+			
+			if (C  == 0 || B % A == 0) {
+				System.out.println("Sao Multiplos");
+			}
+			else {
+				System.out.println("Nao sao Multiplos");
+			}
+			
+			sc.close();
 		}
-
-	}
 
 }
