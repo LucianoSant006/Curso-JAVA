@@ -8,30 +8,44 @@ public class Main {
 
 			Scanner sc = new Scanner(System.in);
 
-			int horaInicial = sc.nextInt();
-			int horaFinal = sc.nextInt();
+			int code = sc.nextInt();
+			int Quant = sc.nextInt() ;
 			
-			int duracao;
+			double valorT;
 			
-			if(horaInicial < horaFinal) {
+			switch(code) {
+			case 1 :{
+				 valorT = Quant * 4.00;  
+					System.out.printf("Total %.2f",valorT);
+			}break;
+			case 2:{
+				valorT = Quant * 4.50;
+				System.out.printf("Total %.2f",valorT);
+			}break;
+			case 3:{
 				
-				duracao = horaFinal - horaInicial;
+				valorT = Quant * 5.0;
+				System.out.printf("Total %.2f",valorT);
+			}break;
+			case 4:{
+				valorT = Quant * 2.0;
+				System.out.printf("Total %.2f",valorT);
 				
+			}break;
+			case 5:{
+				valorT = Quant * 1.50;
+				
+				System.out.printf("Total %.2f",valorT);
+			}break;
+			default:{
+				System.out.println("Valor não encontrado");
+				break;
 			}
 			
-			else{
-				duracao = 24 - horaInicial + horaFinal;
+			
 			}
-			
-			System.out.println("O jogo durou "+duracao+"Horas");
-			
-			sc.close();
-
-			{
-				
-			}
-			
 			sc.close();
 		}
-
 }
+
+		
