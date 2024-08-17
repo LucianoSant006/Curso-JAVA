@@ -3,21 +3,35 @@ import java.util.Scanner;
 
 public class Main {
 
-	public static void main(String[] args) {
 
-		Locale.setDefault(Locale.US);
+		public static void main(String[] args) {
 
-		Scanner sc = new Scanner(System.in);
+			Scanner sc = new Scanner(System.in);
 
-		int i = sc.nextInt(); 
-		
-		if (i %2 == 0) {
-			System.out.printf("O número %d é Par",i);
-		} else {
-			System.out.printf("O número %d é Impar",i);
+			int horaInicial = sc.nextInt();
+			int horaFinal = sc.nextInt();
+			
+			int duracao;
+			
+			if(horaInicial < horaFinal) {
+				
+				duracao = horaFinal - horaInicial;
+				
+			}
+			
+			else{
+				duracao = 24 - horaInicial + horaFinal;
+			}
+			
+			System.out.println("O jogo durou "+duracao+"Horas");
+			
+			sc.close();
 
+			{
+				
+			}
+			
+			sc.close();
 		}
-
-	}
 
 }
