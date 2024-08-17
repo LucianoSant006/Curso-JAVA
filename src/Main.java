@@ -2,50 +2,30 @@ import java.util.Locale;
 import java.util.Scanner;
 
 public class Main {
+	
+	public static void main(String[] args) {
 
+	Locale.setDefault(Locale.US);
+	Scanner sc = new Scanner(System.in);
 
-		public static void main(String[] args) {
+	double numero = sc.nextDouble();
 
-			Scanner sc = new Scanner(System.in);
+	if(numero<0.0||numero>100.0)
+	{
+		System.out.println("Fora de intervalo");
+	}else if(numero<=25.0)
+	{
+		System.out.println("Intervalo [0,25]");
+	}else if(numero<=50.0)
+	{
+		System.out.println("Intervalo (25,50]");
+	}else if(numero<=75.0)
+	{
+		System.out.println("Intervalo (50,75]");
+	}else
+	{
+		System.out.println("Intervalo (75,100]");
+	}
 
-			int code = sc.nextInt();
-			int Quant = sc.nextInt() ;
-			
-			double valorT;
-			
-			switch(code) {
-			case 1 :{
-				 valorT = Quant * 4.00;  
-					System.out.printf("Total %.2f",valorT);
-			}break;
-			case 2:{
-				valorT = Quant * 4.50;
-				System.out.printf("Total %.2f",valorT);
-			}break;
-			case 3:{
-				
-				valorT = Quant * 5.0;
-				System.out.printf("Total %.2f",valorT);
-			}break;
-			case 4:{
-				valorT = Quant * 2.0;
-				System.out.printf("Total %.2f",valorT);
-				
-			}break;
-			case 5:{
-				valorT = Quant * 1.50;
-				
-				System.out.printf("Total %.2f",valorT);
-			}break;
-			default:{
-				System.out.println("Valor não encontrado");
-				break;
-			}
-			
-			
-			}
-			sc.close();
-		}
-}
-
-		
+	sc.close();
+}}
