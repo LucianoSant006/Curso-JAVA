@@ -1,38 +1,41 @@
-import java.util.Locale;
 import java.util.Scanner;
 
-public class Main {
+public class Main{
+	
 
 	public static void main(String[] args) {
 
-		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
-
-		int x = 0;
-		int y = 0;
-		System.out.printf("Digite a cordenada X %n");
-		x = sc.nextInt();
-		System.out.printf("Digite a Cordenada Y %n");
-		y = sc.nextInt();
-		while (x != 0 && y != 0) {
-
-			if (x > 0 && y > 0) {
-				System.out.println("primeiro");
-			} else if (x < 0 && y > 0) {
-				System.out.println("segundo");
-			} else if (x < 0 && y < 0) {
-				System.out.println("terceiro");
-			} else {
-				System.out.println("quarto");
+		
+		int gasolina =0;
+		int alcool =0;
+		int diesel = 0;
+		
+		int tipo = sc.nextInt(); 
+		while (tipo != 4) {
+			
+			if(tipo == 1) {
+				
+				gasolina +=1;
+			}else if(tipo == 2){
+				alcool+=1;
+			}else if (tipo  == 3) {
+				
+				diesel += 1;
 			}
-			System.out.printf("Digite a cordenada X %n");
-			x = sc.nextInt();
-			System.out.printf("Digite a Cordenada Y %n");
-			y = sc.nextInt();
+			
+			tipo = sc.nextInt();
+			
+			
 		}
+		System.out.println("Gasolina  "+gasolina);
+		System.out.println("Alcoil  "+alcool);
+		System.out.println("diesel  "+diesel);
+		System.out.println("Muito Obrigado");
+		
 
-		sc.close();
-
+		
 	}
-
 }
+	
+
