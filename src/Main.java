@@ -7,31 +7,26 @@ public class Main{
 
 		Scanner sc = new Scanner(System.in);
 		
-		int gasolina =0;
-		int alcool =0;
-		int diesel = 0;
-		
-		int tipo = sc.nextInt(); 
-		while (tipo != 4) {
+		int g =0;
+		int f = 0;
+		int p =0;
+		int N = sc.nextInt();
+		for(int x = 0;x < N;x++) {
+			p = sc.nextInt();
 			
-			if(tipo == 1) {
-				
-				gasolina +=1;
-			}else if(tipo == 2){
-				alcool+=1;
-			}else if (tipo  == 3) {
-				
-				diesel += 1;
+			if(p >=10 &&p <= 20) {
+				g += 1;
 			}
 			
-			tipo = sc.nextInt();
-			
+			else {
+				f += 1;
+			}
 			
 		}
-		System.out.println("Gasolina  "+gasolina);
-		System.out.println("Alcoil  "+alcool);
-		System.out.println("diesel  "+diesel);
-		System.out.println("Muito Obrigado");
+		System.out.println("in "+g);
+		System.out.println("out "+f);
+		
+		
 		
 
 		
