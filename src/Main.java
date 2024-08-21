@@ -7,7 +7,7 @@ public class Main{
 
 		Scanner sc = new Scanner(System.in);
 		
-		
+		System.out.println("Digite o numero de notas");
 		int N = sc.nextInt();
 		for(int x = 0;x < N;x++) {
 			
