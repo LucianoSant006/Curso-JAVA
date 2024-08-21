@@ -7,18 +7,20 @@ public class Main{
 
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("Digite o numero de notas");
+		System.out.println("Digite o numero de not");
 		int N = sc.nextInt();
 		for(int x = 0;x < N;x++) {
 			
-			double p1 = sc.nextDouble();
-			double p2 = sc.nextDouble();
-			double  p3= sc.nextDouble();
-
+			double n1 = sc.nextDouble();
+			double n2 = sc.nextDouble();
 			
-			double media = (p1 * 2.0 + p2 * 3.0 + p3 * 5.0) / 10.0;
-
-			System.out.printf("%.1f%n", media);
+			if(n2 ==0) {
+				System.out.printf("Divisão impossivel");
+			}else {
+				double media = ( n1 / n2);
+				System.out.printf("%.1f%n", media);
+			}
+			sc.close();	
 		}
 		
 		
