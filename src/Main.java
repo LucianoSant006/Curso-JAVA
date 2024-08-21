@@ -7,24 +7,19 @@ public class Main{
 
 		Scanner sc = new Scanner(System.in);
 		
-		int g =0;
-		int f = 0;
-		int p =0;
+		
 		int N = sc.nextInt();
 		for(int x = 0;x < N;x++) {
-			p = sc.nextInt();
 			
-			if(p >=10 &&p <= 20) {
-				g += 1;
-			}
+			double p1 = sc.nextDouble();
+			double p2 = sc.nextDouble();
+			double  p3= sc.nextDouble();
+
 			
-			else {
-				f += 1;
-			}
-			
+			double media = (p1 * 2.0 + p2 * 3.0 + p3 * 5.0) / 10.0;
+
+			System.out.printf("%.1f%n", media);
 		}
-		System.out.println("in "+g);
-		System.out.println("out "+f);
 		
 		
 		
