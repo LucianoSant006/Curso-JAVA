@@ -7,24 +7,19 @@ public class Main{
 
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("Digite o numero de not");
+		System.out.println("Digite o numero de numero");
 		int N = sc.nextInt();
-		for(int x = 0;x < N;x++) {
-			
-			double n1 = sc.nextDouble();
-			double n2 = sc.nextDouble();
-			
-			if(n2 ==0) {
-				System.out.printf("Divisão impossivel");
-			}else {
-				double media = ( n1 / n2);
-				System.out.printf("%.1f%n", media);
-			}
-			sc.close();	
+		int f =0;
+		for(int x = N;x >=0 ;x--)
+		{
+				f = x *N;
+				System.out.println(f);
+		
+				
 		}
 		
 		
-		
+		sc.close();
 
 		
 	}
