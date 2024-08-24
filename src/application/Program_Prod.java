@@ -20,7 +20,10 @@ public class Program_Prod {
 		System.out.println("Quantity in stock: ");
 		product.quantity = sc.nextInt();
 		
-
+		//Não precisa do toString o java decta
+		System.out.println(product.toString());
+		
+		sc.close();
 	}
 
 }

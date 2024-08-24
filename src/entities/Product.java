@@ -21,6 +21,19 @@ public void addProduct(int quantity) {
     this.quantity += quantity; 
 }
 
+public void removeProducts(int quantity) {
+	this.quantity -= quantity;
+}
 
+public String toString() {
+	
+	return name
+		+ ", $"
+		+String.format("%.2F", price)
+		+", "
+		+ quantity
+		+" units, Total: $ "
+		+ String.format("%.2f",totalValueInStrock());
+}
 
 }
