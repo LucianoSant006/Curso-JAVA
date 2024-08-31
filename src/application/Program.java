@@ -3,7 +3,6 @@ package application;
 import java.util.Locale;
 import java.util.Scanner;
 
-import entities.Student;
 
 
 
@@ -14,23 +13,23 @@ public class Program {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		Student stu= new Student();
+		int n = sc.nextInt();
+		double[] vect = new double[n];
 		
-		System.out.println("What's your name");
-		stu.name = sc.next();
-		sc.nextLine();
-		System.out.println("write your grade for the three semesters ");
-		stu.nota1 = sc.nextDouble();
-		stu.nota2 =sc.nextDouble();
-		stu.nota3 = sc.nextDouble();
-		System.out.println(stu);
-		if (stu.Finalgrade() < 60.0) {
-		System.out.println("Failed");
-		System.out.printf("Missing %.2f Points %n", stu.calcPoints());
+		for (int i= 0; i < n;i++) {
+			vect[i] = sc.nextDouble();
 		}
-		else {
-		System.out.println("PASS");
+		double sum = 0.0;
+		
+		for(int i =0; i < n;i++) {
+			
+			sum += vect[i];
+			
 		}
+		double avg = sum / n;
+		
+		System.out.printf("AVERAGE HEIGHT: %.2f ",avg);
+
 		sc.close();
 	
 	}
