@@ -5,49 +5,34 @@ import java.util.Scanner;
 
 import entities.Product;
 
+public class Program {
 
-
-
-public class Program{
-	
-	
 	public static void main(String[] Args) {
-		
-		
+
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
-		
-		int N =sc.nextInt();
-		
-	Product[]  vect = new Product[N];
-		
-		for(int i =0; i < vect.length; i++) {
-			
-			String name = sc.next();
-			double price = sc.nextDouble();
-			
-			vect[i] = new Product(name, price);
-		}
-		
-			double sum =0.0;
-			String nome = null;
-		for (int i = 0; i < vect.length;i++) {
-			
-			
-			sum += vect[i].getPrice();
-			
-		}
-		
-		 double avg = sum /N;
-		 
-		 System.out.printf("%f",avg);
+		System.out.print("Quantos numeros vai digitar ?");
+		int N = sc.nextInt();
 
+		int[] vect = new int[N];
 		
-		
-		
+		for(int i = 0; i < vect.length;i++) {
+			System.out.print("Digite um numeor");
+			 vect[i] = sc.nextInt();
+			 
+			
+		}
+		System.out.println("Numeros Negativos:");
+		for(int i=0; i< vect.length; i++) {
+	        if (vect[i] < 0) {
+	        	 
+	        	System.out.printf("%d\n", vect[i]);
+	        }
+	    
+
+			
+		}
+		sc.close();
 	}
-	
-	
-	
-	
 }
+
