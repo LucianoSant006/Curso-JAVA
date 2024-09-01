@@ -3,34 +3,51 @@ package application;
 import java.util.Locale;
 import java.util.Scanner;
 
+import entities.Product;
 
 
 
-public class Program {
 
+public class Program{
+	
+	
 	public static void main(String[] Args) {
+		
 		
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		int n = sc.nextInt();
-		double[] vect = new double[n];
+		int N =sc.nextInt();
 		
-		for (int i= 0; i < n;i++) {
-			vect[i] = sc.nextDouble();
-		}
-		double sum = 0.0;
+	Product[]  vect = new Product[N];
 		
-		for(int i =0; i < n;i++) {
+		for(int i =0; i < vect.length; i++) {
 			
-			sum += vect[i];
+			String name = sc.next();
+			double price = sc.nextDouble();
+			
+			vect[i] = new Product(name, price);
+		}
+		
+			double sum =0.0;
+			String nome = null;
+		for (int i = 0; i < vect.length;i++) {
+			
+			
+			sum += vect[i].getPrice();
 			
 		}
-		double avg = sum / n;
 		
-		System.out.printf("AVERAGE HEIGHT: %.2f ",avg);
+		 double avg = sum /N;
+		 
+		 System.out.printf("%f",avg);
 
-		sc.close();
-	
+		
+		
+		
 	}
+	
+	
+	
+	
 }
