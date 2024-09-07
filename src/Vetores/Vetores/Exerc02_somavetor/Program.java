@@ -1,4 +1,4 @@
-package application;
+package Vetores.Exerc02_somavetor;
 
 import java.util.Locale;
 import java.util.Scanner;
@@ -34,17 +34,17 @@ public class Program {
 		System.out.print("VALORES = ");
 		for (int i = 0; i < vect.length; i++) {
 
-			
+
 			System.out.printf("%.2f ",vect[i]);
 
 		}
-		
+
 		double avg = soma/ N;
-		
+
 		System.out.println();
 		System.out.printf("Soma =  %.2f %n" , soma);
 		System.out.printf("Média =  %.2f %n" , avg);
-	
+
 
 		sc.close();
 	}
